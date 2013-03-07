@@ -1,42 +1,4 @@
-<%= form_for(@message) do |f| %>
-  <% if @message.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@message.errors.count, "error") %> prohibited this message from being saved:</h2>
-
-      <ul>
-      <% @message.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :telnum %><br />
-    <%= f.text_area :telnum %>
-  </div>
-  <div class="field">
-    <%= f.label :message %><br />
-    <%= f.text_field :message %>
-  </div>
-  <div class="field">
-    <%= f.label :sendtype %><br />
-    <%= f.number_field :sendtype %>
-  </div>
-  <div class="field">
-    <%= f.label :sendnum %><br />
-    <%= f.number_field :sendnum %>
-  </div>
-  <div class="field">
-    <%= f.label :sendtime %><br />
-    <%= f.text_field :sendtime %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
-
-<%= form_for(@message) do |f| %>
+﻿<%= form_for(@message) do |f| %>
   <% if @message.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@message.errors.count, "error") %> prohibited this message from being saved:</h2>
@@ -50,14 +12,14 @@
   <% end %>
   <div class="container">
     <header class="white band padded">
-      <div><img src="assets/rails.png" style="width:20%;"></div><big>Welcome menghy! <span style="color: red;">balance is 34569.</span></big>
+      <div><img src="/dxpt.png" style="width:20%;"></div><big>Welcome menghy! <span style="color: red;">balance is 34569.</span></big>
 
       <div class="pull-right">
 	<nav class="inline">
 	  <ul>
-	    <li><a href="#nowhere" title="q">�ҵ���Ϣ</a></li>
+	    <li><a class="modal button" href="http://placekitten.com/" title="查看我的信息">我的信息</a></li>
 
-	    <li><a href="#nowhere" title="q">q</a></li>
+	    <li><a href="#nowhere" title="q">退出</a></li>
 	  </ul>
 	</nav>
       </div>
@@ -66,15 +28,14 @@
       <div class="pull-left">
 	<nav class="inline">
 	  <ul>
-	    <li><a href="./home.html"></a></li>
 
-	    <li><a href="#nowhere" title="g;">g;</a></li>
+	    <li><a href="#nowhere" title="g;">发送短信</a></li>
 
-	    <li><a href="#nowhere" title="gg;">g;</a></li>
+	    <li><a href="#nowhere" title="gg;">发送记录</a></li>
 
-	    <li><a href="#nowhere" title="g;">g</a></li>
+	    <li><a href="#nowhere" title="g;">费用明细</a></li>
 
-	    <li><a href="#nowhere" title="g">g</a></li>
+	    <li><a href="#nowhere" title="g">我的客户</a></li>
 	  </ul>
 	</nav>
       </div>
@@ -167,3 +128,4 @@ b </span><span class="radio-list" style="margin-left: 2em">
 
   </script>
 
+ 
